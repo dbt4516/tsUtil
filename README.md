@@ -1,7 +1,7 @@
 #Windows时间戳插件
 
 ##下载
-https://github.com/dbt4516/tsUtil/blob/master/TsUtil.exe
+下载链接：https://github.com/dbt4516/tsUtil/blob/master/TsUtil.exe<br>
 ![](https://github.com/dbt4516/tsUtil/blob/master/raw/snap3 -copy.png)  
 ##功能点
 ###1 时间戳 -> 时间提示
