@@ -147,6 +147,7 @@
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.TopMost = true;
             this.TransparencyKey = System.Drawing.Color.Fuchsia;
             this.Deactivate += new System.EventHandler(this.lostFocus);
             this.panel1.ResumeLayout(false);

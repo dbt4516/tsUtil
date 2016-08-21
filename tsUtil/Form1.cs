@@ -46,6 +46,15 @@ namespace TsUtil {
         public static long getDateTime(String time) {
             var now = DateTime.Now;
             int y = now.Year, M = now.Month, d = now.Day, h = now.Hour, m = now.Minute;
+            int s = 0;
+            if (time.Contains(".")) {
+                var ss = time.Substring(time.LastIndexOf(".") + 1);
+                time = time.Substring(0, time.LastIndexOf("."));
+                if (ss.Length == 1) {
+                    ss += "0";
+                }
+                s = int.Parse(ss);
+            }
             if (time.Length >= 2) {
                 var t = time.Substring(time.Length - 2, 2);
                 m = int.Parse(t);
@@ -66,14 +75,18 @@ namespace TsUtil {
                 var t = time.Substring(time.Length - 12, 4);
                 y = int.Parse(t);
             }
-            var dt = new DateTime(y, M, d, h, m, 0, 0, System.DateTimeKind.Local);
-            var start = new DateTime(1970, 1, 1, 0, 0, 0, 0, System.DateTimeKind.Utc).AddHours(8);
+
+            //Time zone convertion is confusing. Always need to add a time zone offset despite the DateTimeKind setting.
+            var dt = new DateTime(y, M, d, h, m, s, 0, System.DateTimeKind.Local);
+            var tz = TimeZone.CurrentTimeZone.GetUtcOffset(dt); 
+            var start = new DateTime(1970, 1, 1, 0, 0, 0, 0, System.DateTimeKind.Utc).AddHours(tz.Hours);
+            
             return (dt.Ticks - start.Ticks) / 1000 / 1000 / 10;
         }
 
         protected override void DefWndProc(ref Message m) {
             if (m.Msg == WM_CLIPBOARDUPDATE) {
-                var text = Clipboard.GetText();
+                var text = Clipboard.GetText().Trim();
                 if (text.Length == 13) {
                     text = text.Substring(0, 10);
                 }
@@ -150,7 +163,7 @@ namespace TsUtil {
         private void enterKeyDown(object sender, KeyEventArgs e) {
             if (e.KeyCode == Keys.Enter) {
                 try {
-                    var ts = getDateTime(tb.Text).ToString();
+                    var ts = getDateTime(tb.Text).ToString().Trim();
                     if (ts.Length == 10) {
                         Clipboard.SetText(ts);
                     }
@@ -180,13 +193,14 @@ namespace TsUtil {
         }
 
         private void exit(object sender, EventArgs e) {
+            RemoveClipboardFormatListener(this.Handle);
             Application.Exit();
         }
 
         private void poweredByQOSSToolStripMenuItem_Click(object sender, EventArgs e) {
 
         }
-
+ 
         
        
     }
