@@ -1,8 +1,8 @@
 #Windows时间戳插件
 
 ##下载
-下载链接：https://github.com/dbt4516/tsUtil/blob/master/TsUtil.exe<br>
 ![](https://github.com/dbt4516/tsUtil/blob/master/raw/snap3 -copy.png)  
+下载链接：https://github.com/dbt4516/tsUtil/blob/master/TsUtil.exe<br>
 ##功能点
 ###1 时间戳 -> 时间提示
 ####使用方法：
@@ -62,7 +62,7 @@ This app has been tested on Thinkpad T440 (Win10) & Dell Latitude 3350 (Win7) wi
 * 2016-08-20 编写代码，几乎不会写c#几乎是一个点一个点谷歌写下来（连怎么退出程序，怎么监听事件都不知道。。）。闲时呼出怎么做调整了多次方案。
 * 2016-08-21 细节调整，整理文档，上传github。
 
-## Last
+## On Last
 Arber向来鄙夷做app，如果他知道我花了一天多的时间写了个这估计又要说我不务正业浪费时间了，赶紧卸载vs压压惊。<br>
 我现在做不来技术改变世界，但或许可以花些功夫改变细节。<br>
 希望能给大家（尤其老大）一点点方便。<br>
