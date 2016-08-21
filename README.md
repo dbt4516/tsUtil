@@ -11,9 +11,10 @@ https://github.com/dbt4516/tsUtil/blob/master/TsUtil.exe
 ![](https://github.com/dbt4516/tsUtil/blob/master/raw/snap1.png)  
 ####处理逻辑说明：
 监听系统剪贴板，若剪贴板内为10位或13位时间戳则进行显示。<br>
+提示文本将显示在当前鼠标指针上方50px的位置，如果鼠标在边缘则会自动调整。<br>
 ###2 时间 -> 时间戳快速转换
 ####示例：
-在小框中输入1852，按下回车，插件会自动将今天18时52分00秒对应的时间戳写入系统剪贴板（方便用户接续操作），并在小框中回显yyyy-MM-dd HH:mm:ss字符串供用户核验。<br>
+在小框中输入1852，按下`回车键`，插件会自动将今天18时52分00秒对应的时间戳写入系统剪贴板（方便用户接续操作），并在小框中回显yyyy-MM-dd HH:mm:ss字符串供用户核验。<br>
 如下图按下回车后，当天18时52分00秒的时间戳就会进入剪贴板。<br>
 ![](https://github.com/dbt4516/tsUtil/blob/master/raw/snap4.png)  
 ####时间输入说明：
