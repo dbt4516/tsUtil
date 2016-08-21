@@ -65,7 +65,7 @@ This app has been tested on Thinkpad T440 (Win10) & Dell Latitude 3350 (Win7) wi
 ## Last
 Arber向来鄙夷做app，如果他知道我花了一天多的时间写了个这估计又要说我不务正业浪费时间了，赶紧卸载vs压压惊。<br>
 我现在做不来技术改变世界，但或许可以花些功夫改变细节。<br>
-希望能给大家（尤其老大）一点点使用上的便利。<br>
+希望能给大家（尤其老大）一点点方便。<br>
 <br>
 hongzhan<br>
 2016-08-21 in Xiamen Fujian<br>
