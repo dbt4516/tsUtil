@@ -2,7 +2,7 @@
 
 ##下载
 https://github.com/dbt4516/tsUtil/blob/master/TsUtil.exe
-![](https://github.com/dbt4516/tsUtil/blob/master/raw/snap3.png)  
+![](https://github.com/dbt4516/tsUtil/blob/master/raw/snap3 -copy.png)  
 ##功能点
 ###1 时间戳 -> 时间提示
 ####使用方法：
