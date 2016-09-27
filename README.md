@@ -70,6 +70,6 @@ Arber向来鄙夷做app，如果他知道我花了一天多的时间写了个这
 ##Copyright & Donation
 This project is powered by QOSS zyl, whz. <br>
 如果觉得本项目还不错，欢迎捐款至支付宝账号 18559621964 鼓励作者。<br>
-You are encouraged to donate to Alipay account 18559621964 to make this project better.<br>
+You are encouraged to donate to Alipay account 18559621964 to make this project better.<br><br>
 hongzhan<br>
 2016-08-21 in Xiamen Fujian<br>
