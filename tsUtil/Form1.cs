@@ -123,11 +123,13 @@ namespace TsUtil {
         }
 
         public void show() {
+            Screen s = Screen.FromPoint(new Point(Cursor.Position.X, Cursor.Position.Y));
+            
             var p = System.Windows.Forms.Cursor.Position;
-            var res = Screen.PrimaryScreen.Bounds;
-            var nX = p.X - 50 > (res.Width - 120) ? res.Width - 120 : p.X - 50;
-            nX = nX < 10 ? 10 : nX;
-            var nY = (p.Y - 50) < 10 ? 10 : p.Y-50;
+            var res = s.Bounds;
+            var nX = p.X - 50 > (res.Right - 120) ? res.Right - 120 : p.X - 50;
+            nX = nX < res.Left ? res.Left : nX;
+            var nY = (p.Y - 50) < (res.Top + 10) ? (res.Top + 10) : p.Y - 50;
             //Console.WriteLine(nX + " " + nY);
             Location = new Point(nX, nY);
             
