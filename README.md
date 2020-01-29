@@ -1,14 +1,14 @@
 # Windows时间戳插件
 
 ## 下载
-![](https://github.com/dbt4516/tsUtil/blob/master/raw/snap3 -copy.png)  
+![] (https://github.com/dbt4516/tsUtil/blob/master/raw/snap3 -copy.png)  
 下载链接：https://github.com/dbt4516/tsUtil/blob/master/TsUtil.exe<br>
 ## 功能点
 ### 1 时间戳 -> 时间提示
 #### 使用方法：
 复制想要转换的时间戳，即可在屏幕上看到其对应的时间。提示文本将在显示三秒后消失。<br>
 #### 示例：
-![](https://github.com/dbt4516/tsUtil/blob/master/raw/snap1.png)  
+![] (https://github.com/dbt4516/tsUtil/blob/master/raw/snap1.png)  
 #### 处理逻辑说明：
 监听系统剪贴板，若剪贴板内为10位或13位时间戳则进行显示。<br>
 提示文本将显示在当前鼠标指针上方50px的位置，如果鼠标在边缘则会自动调整。<br>
